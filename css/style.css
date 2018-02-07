@@ -1,0 +1,273 @@
+body {
+  margin: 0px;
+  overflow-y: hidden;
+  background-image: url("../images/1.jpg");
+}
+
+#picturebox {
+  float: left;
+}
+
+#logo {
+  height: 80;
+  float: left;
+  margin-left: 5px;
+  font-size: 45px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#logo a {
+  text-decoration: none;
+  color: red;
+}
+#header {
+  height : 100px;
+  background-color: blue;
+  padding: 20px;
+  background-image: url("../images/1.jpg");
+}
+
+#main-container {
+  height: 595px;
+  border: 1px solid red;
+}
+
+#main-left {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+  border: 1px solid red
+}
+
+#main-right {
+  width: calc(33.3% - 4.5px);
+  height: 100%;
+  float: left;
+  border: 1px solid red;
+  color: #fff;
+  overflow: auto;
+}
+
+#main-right img {
+  height: 200px;
+  width: 200px;
+  margin-left: 130px;
+  margin-top: -40px;
+  border-radius: 50%;
+}
+
+#main-center {
+  overflow: auto;
+  width: 33.3%;
+  height: 100%;
+  float: left;
+  border: 1px solid red
+}
+
+#main-center img {
+  width: 180px;
+  height: 180px;
+  margin-bottom: -20px;
+  margin-top: -40px;
+  margin-left: 15px;
+  border-radius: 10px;
+}
+
+h1 {
+  color: red;
+  font-size: 35px;
+  margin-left: 10px;
+  font-family: sans-serif;
+}
+
+h2 {
+  margin-top: 1px;
+  font-size: 25px;
+  margin-left: 10px;
+  font-family: sans-serif;
+  color: red;
+}
+
+.heroDescription {
+  float: right;
+  color: red;
+}
+
+h2 a:link {
+  text-decoration: none;
+}
+h2 a {
+  color: indianred;
+}
+
+h2 a:hover {
+  color: blue;
+}
+
+h4 {
+  color: indianred;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+h5 {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  font-size: 30px;
+  margin-left: 10px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+h5 a:link {
+  text-decoration: none;
+}
+
+h5 a {
+  color: indianred;
+}
+
+h5 a:hover {
+  color: red;
+}
+
+h6 {
+  font-size: 25px;
+  margin-left: 5px;
+  margin-top: -10px;
+  color: indianred;
+  font-weight: bolder;
+}
+.heropower {
+  font-size: 20px;
+  margin-left: 5px;
+  margin-top: -25px;
+  color: red;
+}
+
+p {
+  color: red;
+  margin-left: 5px;
+}
+
+#footerindex {
+  text-align: center;
+  margin-left: 0px;
+  color: blue;
+  background-color: indianred;
+  border: 1px solid red;
+}
+
+/* Ratings widget */
+@font-face
+{
+    font-family: 'anudawitalic';
+    src: url('../fonts/anudi-webfont.woff2') format('woff2'),
+         url('../fonts/anudi-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face
+{
+    font-family: 'anudawregular';
+    src: url('../fonts/anudrg-webfont.woff2') format('woff2'),
+         url('../fonts/anudrg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+form.frmRate
+{
+              margin: 10px auto;
+}
+
+.rate {
+    float: left;
+}
+
+
+/* Hide radio */
+.rate > input[type='radio']
+{
+    display: none;
+}
+
+/* Order correctly by floating highest to the right */
+.rate > label.lblRating
+{
+    float: right;
+}
+
+/* The star of the show */
+.rate > label.lblRating:before
+{
+    display: inline-block;
+    font-size: 60px;
+    padding: 5px;
+    margin: 0;
+    cursor: pointer;
+    font-family: FontAwesome;
+    content: "\f005 "; /* full star */
+}
+
+/* Zero stars rating */
+.rate > label.lblRating:last-child:before
+{
+    content: "\f006 "; /* empty star outline */
+}
+
+/* Half star trick */
+.rate label.half:before
+{
+    content: "\f089 "; /* half star no outline */
+    position: absolute;
+    padding-right: 0;
+}
+
+/* Click + hover color */
+input:checked ~ label.lblRating,
+label.lblRating:hover, label.lblRating:hover ~ label
+{
+              color: #ffcf40;
+}
+
+/* Hover highlights */
+input:checked + label.lblRating:hover, input:checked ~ label.lblRating:hover, /* highlight current and previous stars */
+input:checked ~ label.lblRating:hover ~ label.lblRating, /* highlight previous selected stars for new rating */
+label.lblRating:hover ~ input:checked ~ label.lblRating /* highlight previous selected stars */
+{
+              color: #ffcf40;
+}
+
+.divSubmit
+{
+              display: block;
+              width: 250px;
+              height: 100%;
+}
+
+.divSubmit > input[type='submit']
+{
+              width: 180px;
+              height: 60px;
+              font-family: anudawregular;
+              font-size: 20px;
+              border: 1px solid #000;
+}
+
+.divSubmit > input[type='submit']:hover
+{
+              background-color: yellow;
+              color: #000000;
+              cursor: pointer;
+              border: 1px solid #000;
+}
+
+#warning {
+  color: yellow;
+  font-size: 20px;
+}
